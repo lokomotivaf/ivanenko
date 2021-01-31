@@ -1,6 +1,6 @@
 let origotext = document.getElementById('text');
 const origospeed = document.getElementById('speed');
-const vyptext = 'Mirek je gey';
+const vyptext = 'Mirek je gey, Fuj jikol, Hunat je tepla pica';
 let letterid = 1;
 
 let speed = 500
