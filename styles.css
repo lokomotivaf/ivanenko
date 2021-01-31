@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0b6b6;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div1 {
+  position: absolute;
+  bottom: 40px;
+  background: grey;
+  font-size: 20px;
+  padding: 7px 10px;
+}
+
+input {
+  width: 60px;
+  height: 20px;
+  font-size: 14px;
+  background-color: #e0b6b6;
+  border: none;
+  text-align: center;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input:focus {
+  outline: none;
+}
