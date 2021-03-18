@@ -80,7 +80,7 @@ nav a:hover {
   }
   nav a {
     width: 80%;
-    font-size: 40px;
+    font-size: 36px;
   }
   .hlava {
     margin-bottom: -5px;
@@ -95,9 +95,9 @@ nav a:hover {
   .hlavni h1 {
     text-align: center;
     margin-right: 40px;
-    font-size: 40px;
+    font-size: 36px;
   }
   .hlavni p {
-    font-size: 24px;
+    font-size: 22px;
 }
 
