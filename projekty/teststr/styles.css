@@ -70,7 +70,7 @@ nav a:hover {
 .obrazek img {
   width: 60%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   html body {
       padding-bottom: 30px;
   }
@@ -92,9 +92,4 @@ nav a:hover {
     margin-right: 40px;
   }
 }
-@media only screen and (max-width: 700px) {
-  .hlava {
-    margin-bottom: -4px;
-    overflow: hidden;
-  }
-}
+
