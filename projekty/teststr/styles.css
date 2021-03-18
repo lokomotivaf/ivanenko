@@ -64,6 +64,11 @@ nav a:hover {
   color: #f9c74f;
 }
 
+#h1vol2 {
+  text-align: center;
+  margin-left: auto;
+}
+
 .obrazek {
   text-align: center;
 }
@@ -75,6 +80,31 @@ nav a:hover {
 .mobile {
   display: none;
 }
+
+.jmeno {
+  font-weight: bold;
+}
+
+.kontakty .tel {
+  text-decoration: none;
+  color: #e36414;
+}
+.kontakty .mail {
+  text-decoration: none;
+  color: #f9c74f;
+}
+
+#face {
+  text-decoration: none;
+  color: #4267B2;
+}
+
+#face:hover {
+  transition: 0.5s;
+  color: black;
+}
+
+
 @media only screen and (max-width: 1000px) {
   html body {
       padding-bottom: 30px;
@@ -94,7 +124,7 @@ nav a:hover {
     width: 250%;
   }
   .obrazek img {
-    width: 110%;
+    width: 100%;
   }
   .hlavni h1 {
     text-align: center;
@@ -108,7 +138,6 @@ nav a:hover {
       display: inline;
     }
 }
-
 
 
 /*@media only screen and (max-width: 700px) {
