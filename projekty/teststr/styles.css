@@ -1,0 +1,100 @@
+html, body {
+  background-color: #edf6f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#logo {
+  width: 120%;
+}
+
+.hlava {
+  margin-bottom: -54px;
+  overflow: hidden;
+}
+
+nav p {
+  margin: 0;
+}
+nav {
+  font-family: Arial;
+  background: rgb(116, 192, 206);
+  padding-bottom: 0px;
+  margin: 0 auto;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+
+}
+
+nav a:hover {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.03);
+}
+.active{
+  border-radius: 20px;
+  color: #ffb703;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.hlavni {
+  color: #343a40;
+  font-family: sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 17px;
+}
+.hlavni h1 {
+  text-align: left;
+  margin-left: 8%;
+  color: #f9c74f;
+}
+
+.obrazek {
+  text-align: center;
+}
+
+.obrazek img {
+  width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  html body {
+      padding-bottom: 30px;
+  }
+  nav {
+    background: rgb(116, 192, 206);
+  }
+  .hlava {
+    margin-bottom: -4px;
+    overflow: hidden;
+  }
+  #logo {
+    width: 250%;
+  }
+  .obrazek img {
+    width: 100%;
+  }
+  .hlavni h1 {
+    text-align: center;
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .hlava {
+    margin-bottom: -4px;
+    overflow: hidden;
+  }
+}
