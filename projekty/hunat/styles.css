@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+body {
+  background-color: rgba(0, 0, 0, 9);
+  color: white;
+}
+
+nav {
+  margin: 0 auto;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .logo {
+  width: 60px;
+  background-image: url(pofilovka.jpg);
+  background-size: 100%;
+  background-position: center;
+  height: 60px;
+  clip-path: circle(30px at 50% 50%);
+}
+
+.lg {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+
+}
+
+.navigace a {
+  display: inline-block;
+  margin-right: 24px;
+  height: 26px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.navigace a:hover {
+  color: rgba(255,255,255,0.9);
+  border-bottom: 2px solid rgba(255,255,255,0.7);
+}
+
+
+
+/* ABOUT */
+.about {
+  background-image: url(hunat.jpg);
+  background-size: cover;
+  background-position: left;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  display: grid;
+  grid-template-columns: 48% 48%;
+}
+.prvnipulka {
+  font-size: 20px;
+  font-weight: bold;
+  color: transparent;
+  overflow: hidden;
+  height: 800px;
+  text-align: right;
+
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+.druhapulka {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  overflow: hidden;
+  height: 800px;
+}
+.druhapulka h1 {
+  margin-top: 250px;
+}
+.druhapulka #simpletext {
+  font-size: 16px;
+  margin: 10px 0;
+}
+/*.jedna {
+  height: 100%;
+  width: 100%;
+  -webkit-shape-outside: polygon(102.74% 7px, 48.02% 15.13%, 26.75% 44.49%, 42.92% 60.35%, 60.93% 75.6%, 102.38% 100.72%, 0px 100%, 0% 70%, 0% 35%, 0px 0px);
+  shape-outside: polygon(102.74% 7px, 48.02% 15.13%, 26.75% 44.49%, 42.92% 60.35%, 60.93% 75.6%, 102.38% 100.72%, 0px 100%, 0% 70%, 0% 35%, 0px 0px);
+  float: left;
+  -webkit-clip-path: polygon(102.74% 7px, 48.02% 15.13%, 26.75% 44.49%, 42.92% 60.35%, 60.93% 75.6%, 102.38% 100.72%, 0px 100%, 0% 70%, 0% 35%, 0px 0px);
+  clip-path: polygon(102.74% 7px, 48.02% 15.13%, 26.75% 44.49%, 42.92% 60.35%, 60.93% 75.6%, 102.38% 100.72%, 0px 100%, 0% 70%, 0% 35%, 0px 0px);
+
+}
+*/
+
+
+
+/* GALLERIE */
+.matvorba {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.matvorba h1 {
+  margin: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* BigGalerie when clicked photo*/
+.img-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.img-window img {
+  max-height: 80vh;
+  max-width: 80vh;
+}
+
+
+/* Koktakt */
+.kontakt {
+  font-family: 'Roboto', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.kontakt p {
+  margin: 5px;
+}
+.kontakt i {
+  margin: 0 auto;
+}
+
+#instalogo {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  bottom: 16px;
+  right: 3%;
+  -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+  filter: brightness(0.9) drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1020px) {
+  /* OOVL NAVIGACE */
+  .navtglcon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+  }
+  .navbar-toggle {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+  .navbar-toggle .bar {
+    width: 45px;
+    height: 5px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    display: block;
+    cursor: pointer;
+  }
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  /* NAVIGACE */
+  nav {
+    position: fixed;
+    left: 5%;
+    top: -260px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    transition: all 0.3s ease;
+  }
+
+  .shownav {
+    top: 0;
+  }
+  .logo {
+   width: 120px;
+   background-image: url(pofilovka.jpg);
+   background-size: 100%;
+   background-position: center;
+   height: 120px;
+   clip-path: circle(60px at 50% 50%);
+ }
+
+ .lg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 120px;
+   height: 120px;
+   -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+
+ }
+  .navigace a {
+    font-size: 48px;
+    display: inline-block;
+    margin-right: 68px;
+    margin-left: -40px;
+    height: 62px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  /*ABOUT */
+  main {
+    margin-top: 260px;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 48% 48%;
+  }
+  .prvnipulka {
+    font-size: 40px;
+    font-weight: bold;
+    color: transparent;
+    overflow: hidden;
+    height: 1200px;
+    text-align: right;
+    background-image: url(hunat.jpg);
+    background-size: 240%;
+    background-repeat: no-repeat;
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+  }
+
+  .druhapulka {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    color: white;
+    overflow: hidden;
+    height: 1200px;
+  }
+  .druhapulka h1 {
+    margin-top: 340px;
+  }
+  .druhapulka #simpletext {
+    display: none;
+  }
+
+  /* gallery */
+  .matvorba {
+    width: 90%;
+    font-size: 60px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 480px;
+  }
+  .gallery #img3 {
+    display:  none;
+  }
+  .gallery #img4 {
+    display:  none;
+  }
+  /*Kontakt */
+  .kontakt {
+    font-size: 48px;
+
+  }
+
+  /*Ig LOGO*/
+  #instalogo {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 876px) {
+  nav {
+    position: fixed;
+    left: 5%;
+    top: -260px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    transition: all 0.3s ease;
+  }
+
+  .shownav {
+    top: 0;
+  }
+  .logo {
+   width: 100px;
+   background-image: url(pofilovka.jpg);
+   background-size: 100%;
+   background-position: center;
+   height: 100px;
+   clip-path: circle(50px at 50% 50%);
+ }
+
+ .lg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+   height: 100px;
+   -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+
+ }
+  .navigace a {
+    font-size: 44px;
+    display: inline-block;
+    margin-right: 64px;
+    margin-left: -40px;
+    height: 62px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+ /*ABOUT */
+ main {
+   margin-top: 240px;
+ }
+ .about {
+   display: grid;
+   grid-template-columns: 48% 48%;
+ }
+ .prvnipulka {
+   font-size: 40px;
+   font-weight: bold;
+   color: transparent;
+   overflow: hidden;
+   height: 1200px;
+   text-align: right;
+   background-image: url(hunat.jpg);
+   background-size: 240%;
+   background-repeat: no-repeat;
+ }
+
+ .noselect {
+   -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none;   /* Chrome/Safari/Opera */
+   -khtml-user-select: none;    /* Konqueror */
+   -moz-user-select: none;      /* Firefox */
+   -ms-user-select: none;       /* Internet Explorer/Edge */
+   user-select: none;
+ }
+
+ .druhapulka {
+   font-family: 'Roboto', sans-serif;
+   font-size: 68px;
+   color: white;
+   overflow: hidden;
+   height: 1200px;
+ }
+ .druhapulka h1 {
+   margin-top: 240px;
+ }
+ .druhapulka #simpletext {
+   display: none;
+ }
+
+
+}
+@media only screen and (max-width: 776px) {
+  nav {
+    position: fixed;
+    left: 5%;
+    top: -240px;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    transition: all 0.3s ease;
+  }
+
+  .shownav {
+    top: 0;
+  }
+  .logo {
+   width: 100px;
+   background-image: url(pofilovka.jpg);
+   background-size: 100%;
+   background-position: center;
+   height: 100px;
+   clip-path: circle(50px at 50% 50%);
+ }
+
+ .lg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+   height: 100px;
+   margin-right: 100px;
+   -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+
+ }
+  .navigace a {
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 56px;
+    margin-left: -40px;
+    height: 58px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+}
